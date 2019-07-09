@@ -9,11 +9,14 @@ git clone https://github.com/chinalwb/android-DisplayingBitmaps.git
 
 这个实例代码中主要演示了
 
+0. 如有侵权, 联系到我马上删除
 1. 异步加载 bitmap 并设置到 imageView
 2. LruCache / DiskLruCache
 3. 从 LruCache 中移除的 bitmap 的软引用, 方便 bitmap 的 reuse (BitmapFactory.Options.inBitmap, 条件是被复用的 bitmap 的尺寸要比应用到的目标 bitmap 大 -- API_LEVEL >= 19, 如果是 18,则必须相等)
 4. RecyclingImageView 在 GridView 中的使用, 当 GridView 的 view 被重复使用时, 根据 imageView 的显示状态和缓存状态, 来决定是否对Bitmap 进行 recycle 的操作
 5. Google Sample 原文提到, 建议使用 Glide 或 Picasso
+
+
 
 
 Android DisplayingBitmaps Sample
